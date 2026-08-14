@@ -16,7 +16,7 @@ app = FastAPI(title="Sentiment Analysis API")
 # ---- Load model + tokenizer once, when the server starts ----
 print("Loading model... this happens once at startup")
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
+MODEL_NAME = "lisaluis717/sentiment-distilbert-imdb"
 model.eval()
 print("Model loaded successfully!")
 
